@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tokugawa
+Comment=Tokugawa P2P Cryptocurrency
+Comment[fr]=Tokugawa, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Tokugawa, eşten eşe kriptografik sanal para birimi
+Exec=tokugawa-qt %u
+Terminal=false
+Type=Application
+Icon=tokugawa128
+MimeType=x-scheme-handler/tokugawa;
+Categories=Office;Finance;

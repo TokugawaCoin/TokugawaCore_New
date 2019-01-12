@@ -1,0 +1,11 @@
+[Protocol]
+exec=tokugawa-qt '%u'
+protocol=tokugawa
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

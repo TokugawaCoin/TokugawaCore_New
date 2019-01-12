@@ -1,0 +1,26 @@
+[Unit]
+Description=Tokugawa's distributed currency daemon
+After=network.target
+
+[Service]
+User=tokugawa
+Group=tokugawa
+
+Type=forking
+PIDFile=/var/lib/tokugawad/tokugawad.pid
+
+ExecStart=/usr/bin/tokugawad -daemon -pid=/var/lib/tokugawad/tokugawad.pid \
+          -conf=/etc/tokugawa/tokugawa.conf -datadir=/var/lib/tokugawad
+
+ExecStop=-/usr/bin/tokugawa-cli -conf=/etc/tokugawa/tokugawa.conf \
+         -datadir=/var/lib/tokugawad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
