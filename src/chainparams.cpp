@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The Tokugawa developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2019 The Tokugawa developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -64,10 +65,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(4698, uint256("0xc82b0ed9a2e9ee5ef44526f972df0e3dddefc0692c5da2d1797027cfa17559da"))
     (5931, uint256("0xbb7b66bc62403d289267e2fb8ed3d6abc75fc99befab3be59710e7ebe0e57a69"))
     (6030, uint256("0x3d47b3d438a24dc22262869749ad0c72b85b8a15ce25fc8e34067a26dc241670"))
-;
+	(23497, uint256("0x0df489b3de5870d808ddbd911ca0ad2a3e48f0ff8d997ce431bc3c070118e363"))
+	(48206, uint256("0xa99c45a8bb1aa291fc9689bbcb1c921e82b412afd605a2c3aaf28feebc720072"))
+	(71237, uint256("0xedafca6f30e12fa8e7aab1bd18b78e7839f71205780ba64563d797f3f999f27a"))
+	(89907, uint256("0x3ea8a340bacd71213ddfad6e0c9cd43ed118116c2620e5c3c7fdb377fa2b3ce7"))
+	;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-	1547283644, // * UNIX timestamp of last checkpoint block
+	1552369491, // * UNIX timestamp of last checkpoint block
     11822,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2365        // * estimated number of transactions per day after checkpoint
@@ -222,8 +227,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "044a7e1ea79f11267a698e4c85c9fb3b59ad430eb4bbc01bfb60c316ff2c796a10bcd5d2ebad7a622af89ad52d57d47fcc0e7ec9e17a344cb0b3158ff9b9f5656f";
-        strSporkKeyOld = "044a7e1ea79f11267a698e4c85c9fb3b59ad430eb4bbc01bfb60c316ff2c796a10bcd5d2ebad7a622af89ad52d57d47fcc0e7ec9e17a344cb0b3158ff9b9f5656f";
+        strSporkKey = "04693405167a272986bf55699568b911416c3b91152a7e46bebb81ab7cbff9682c4a8c0e769b8c24624ec0d91fe6b28098664607700e0e12ba3486fdde823d1601";
+        strSporkKeyOld = "04693405167a272986bf55699568b911416c3b91152a7e46bebb81ab7cbff9682c4a8c0e769b8c24624ec0d91fe6b28098664607700e0e12ba3486fdde823d1601";
         strObfuscationPoolDummyAddress = "TN1q2gC9s6nNrnzEsg4aT6bHMLsK9nUhEw";
         nStartMasternodePayments = 1546957800; // Tuesday, January 8, 2019 2:30:00 PM GMT
 
