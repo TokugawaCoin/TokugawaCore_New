@@ -227,8 +227,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04693405167a272986bf55699568b911416c3b91152a7e46bebb81ab7cbff9682c4a8c0e769b8c24624ec0d91fe6b28098664607700e0e12ba3486fdde823d1601";
-        strSporkKeyOld = "04693405167a272986bf55699568b911416c3b91152a7e46bebb81ab7cbff9682c4a8c0e769b8c24624ec0d91fe6b28098664607700e0e12ba3486fdde823d1601";
+        strSporkKey = "044a7e1ea79f11267a698e4c85c9fb3b59ad430eb4bbc01bfb60c316ff2c796a10bcd5d2ebad7a622af89ad52d57d47fcc0e7ec9e17a344cb0b3158ff9b9f5656f";
+        strSporkKeyOld = "044a7e1ea79f11267a698e4c85c9fb3b59ad430eb4bbc01bfb60c316ff2c796a10bcd5d2ebad7a622af89ad52d57d47fcc0e7ec9e17a344cb0b3158ff9b9f5656f";
         strObfuscationPoolDummyAddress = "TN1q2gC9s6nNrnzEsg4aT6bHMLsK9nUhEw";
         nStartMasternodePayments = 1546957800; // Tuesday, January 8, 2019 2:30:00 PM GMT
 
